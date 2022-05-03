@@ -31,5 +31,6 @@ Run Project
     php artisan serve
 ```
 
-![task manager](https://cloud.githubusercontent.com/assets/5895908/20246007/80257188-a9d3-11e6-9355-9cfa87b997a5.JPG)
+![kanban-board](https://user-images.githubusercontent.com/5895908/166413237-f6d1aa6a-5b8a-4d7e-9fe7-c4e29ed7f7a2.png)
+
 
