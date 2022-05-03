@@ -1,0 +1,236 @@
+$base-color: #c790c7;
+$base-color-dark: #c764c7;
+$white-color: #ffffff;
+
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    line-height: 1.5
+}
+
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.board {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.board-main-content {
+    display: flex;
+    margin-right: 0;
+    position: relative;
+    transition: margin .1s ease-in;
+    overflow: scroll;
+    min-height: calc(100vh - 56px);
+}
+
+.title {
+    margin: 0;
+    background-color: $base-color;
+    padding: 10px 15px;
+}
+
+.columns {
+    padding: 0 15px;
+    display: flex;
+}
+
+.column {
+    width: 300px;
+    bottom: 0;
+    left: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    right: 0;
+    top: 0;
+    -webkit-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    background-color: #ebecf0;
+    border-radius: 3px;
+    font-size: 14px;
+    min-height: 80px;
+    margin: 20px 20px 0px 0px;
+}
+
+.column.add-new {
+    min-height: unset !important;
+    height: fit-content;
+    margin-bottom: 15px;
+}
+
+.column.add-new .column-title {
+    opacity: 0.4;
+}
+
+.column-title {
+    grid-row: 1;
+    padding: 10px 10px;
+    border-bottom: 1px solid #e3e0e0;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-size: 13px;
+}
+
+.input {
+    background-color: #ffffff;
+    padding: 0px 5px;
+    margin: 3px;
+    height: 35px;
+    font-size: 14px;
+    width: -webkit-fill-available;
+    border-radius: 3px;
+    display: block;
+    border: 1px solid;
+}
+
+textarea.input {
+    height: auto;
+    font-family: "Nunito", "sans-serif";
+}
+
+.column.add-new .buttons {
+    margin: 3px;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: 1px solid $white-color;
+}
+
+button:hover {
+    border: 1px solid #c4c2c2;
+}
+
+.add-card-btn {
+    border: none;
+}
+
+.add-card-btn:hover {
+    border: none;
+}
+
+.btn-add {
+    background-color: $base-color-dark;
+    color: $white-color;
+}
+
+.btn-add:hover {
+    background-color: $base-color-dark;
+    color: $white-color;
+    border: 1px solid $base-color-dark;
+}
+
+.btn-cancel {
+    background-color: $white-color;
+    color: #000;
+    border: 1px solid $white-color;
+}
+
+.column-title h2 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.column-title .close {
+    cursor: pointer;
+}
+
+.flex {
+    display: flex
+}
+
+.grid {
+    display: grid
+}
+
+.hidden {
+    display: none
+}
+
+.items-center {
+    align-items: center
+}
+
+.justify-start {
+    justify-content: start;
+}
+
+.justify-center {
+    justify-content: center
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.cards {
+    max-height: calc(100vh - 175px);
+    overflow: auto;
+    min-height: 30px;
+}
+
+
+.cards .dragArea {
+    min-height: inherit;
+}
+
+.card {
+    background-color: #ffffff;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 #091e4240;
+    cursor: pointer;
+}
+
+.card-title h2 {
+    font-size: 14px;
+    margin: 0;
+    white-space: pre-wrap;
+}
+
+.card-desc p {
+    font-size: 12px;
+    margin: 0;
+    white-space: pre-wrap;
+}
+
+.card-footer {
+
+}
+
+@media only screen and (max-width: 767px) {
+    .columns {
+        width: 100%;
+        display: block;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .cards {
+        max-height: unset;
+        overflow: auto;
+    }
+}
+
