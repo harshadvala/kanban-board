@@ -31,6 +31,6 @@ Run Project
     php artisan serve
 ```
 
-[kanban-board](https://user-images.githubusercontent.com/5895908/166413237-f6d1aa6a-5b8a-4d7e-9fe7-c4e29ed7f7a2.png)
+![kanban-board](https://user-images.githubusercontent.com/5895908/166413237-f6d1aa6a-5b8a-4d7e-9fe7-c4e29ed7f7a2.png)
 
 
